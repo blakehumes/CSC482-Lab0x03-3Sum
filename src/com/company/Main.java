@@ -14,26 +14,6 @@ public class Main {
         RunTimeTests(Integer.MAX_VALUE);
 
 
-        // CODE FOR TESTING ALGORITHM CORRECTNESS
-        /*System.out.println();
-        for(int i = 0; i < 10; i++) {
-            int[] ok = GenerateTestList(8, -10, 10);
-            System.out.format("Initial List: ");
-            for (int e : ok) {
-                System.out.format("%d ", e);
-            }
-            System.out.format("\nBrute Force Sum3: ");
-            int[] yeah = RemoveDuplicates(ok);
-            for (int e : yeah) {
-                System.out.format("%d ", e);
-            }
-            int[] yeah = FastestSum3(ok, ok.length);
-            System.out.format("%d ", yeah[0]);
-            if(yeah[0] == 1){
-                for(int j = 1; j < 4; j++) System.out.format("%d ", yeah[j]);
-            }
-            System.out.format("\n");
-        }*/
     }
     public static void RunTimeTests(int nMax){
         // Formatting the table
@@ -340,4 +320,25 @@ public class Main {
                 bean.getCurrentThreadCpuTime( ) : 0L;
 
     }
+
+    // CODE FOR TESTING ALGORITHM CORRECTNESS
+        /*System.out.println();
+        for(int i = 0; i < 10; i++) {
+            int[] ok = GenerateTestList(8, -10, 10);
+            System.out.format("Initial List: ");
+            for (int e : ok) {
+                System.out.format("%d ", e);
+            }
+            System.out.format("\nBrute Force Sum3: ");
+            int[] yeah = RemoveDuplicates(ok);
+            for (int e : yeah) {
+                System.out.format("%d ", e);
+            }
+            int[] yeah = FastestSum3(ok, ok.length);
+            System.out.format("%d ", yeah[0]);
+            if(yeah[0] == 1){
+                for(int j = 1; j < 4; j++) System.out.format("%d ", yeah[j]);
+            }
+            System.out.format("\n");
+        }*/
 }
